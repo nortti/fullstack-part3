@@ -12,6 +12,7 @@ const app = express()
 app.use(morgan(':method :url :req :status :res[content-length] - :response-time ms'))
 app.use(bodyParser.json())
 app.use(cors())
+app.use(express.static('build'))
 
 let persons = [
   {
