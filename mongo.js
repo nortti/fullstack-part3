@@ -30,7 +30,7 @@ if (args.length === 0) {
   })
   person
     .save()
-    .then(response => {
+    .then(() => {
       mongoose.connection.close()
     })
 }
